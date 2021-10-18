@@ -9,6 +9,7 @@
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   --border-radius: 0.4rem;
   --text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  --border-bottom: 0.3rem solid var(--primary-color-dark);
   --black: #000000;
   --white: #fff;
   --margin-10: 1rem;
@@ -16,6 +17,7 @@
   --margin-20: 2rem;
   --margin-25: 2.5rem;
   --margin-30: 3rem;
+  --margin-section: 5rem;
   --padding-10: 1rem;
   --padding-15: 1.5rem;
   --padding-20: 2rem;
@@ -129,11 +131,11 @@ h6 {
   height: 75vh;
   display: flex;
   justify-content: space-between;
+  padding: 0 10rem;
 }
 
-.hero-caption,
 .hero-img {
-  width: 48%;
+  width: 50%;
 }
 
 .hero-caption {
@@ -141,29 +143,56 @@ h6 {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding: var(--padding-15) 5rem;
   justify-self: flex-end;
 }
 
 .hero-title {
   margin: 0;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .hero-subtitle {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0;
   font-weight: 600;
-  border-bottom: 0.3rem solid var(--primary-color-dark);
+  border-bottom: var(--border-bottom);
   margin-top: var(--margin-30);
 }
 
 .hero-img {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .hero-img > img {
-  height: 100%;
+  height: 90%;
+}
+
+/* headings */
+.section-heading {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.section-heading::after {
+  content: '';
+  display: inline-block;
+  width: 10rem;
+  text-align: center;
+  border-bottom: var(--border-bottom);
+  position: absolute;
+  bottom: -10%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+/*  */
+/*  */
+/* SERVICES */
+
+.services-container {
+  width: 100%;
+  margin: var(--margin-section) 0;
 }
