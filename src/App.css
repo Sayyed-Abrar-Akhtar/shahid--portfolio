@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-color: #000000;
+  --primary-color: #fcd734;
+  --primary-color-light: #ffff6b;
+  --primary-color-dark: #c5a600;
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --border-radius: 0.4rem;
+  --text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  --black: #000000;
+  --white: #fff;
+  --margin-10: 1rem;
+  --margin-15: 1.5rem;
+  --margin-20: 2rem;
+  --margin-25: 2.5rem;
+  --margin-30: 3rem;
+  --padding-10: 1rem;
+  --padding-15: 1.5rem;
+  --padding-20: 2rem;
+  --padding-25: 2.5rem;
+  --padding-30: 3rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+.wrapper {
+  margin: 5rem;
+  box-sizing: border-box;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  text-shadow: var(--text-shadow);
+}
+
+h1 {
+  font-family: 'Grechen Fuemen', cursive;
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.872rem;
+}
+
+h4,
+p {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.328rem;
+}
+
+h6 {
+  font-size: 1.072rem;
+}
+
+/*  */
+/* HEADER  */
+/*  */
+
+.header {
+  padding: 0 var(--padding-15);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color-dark);
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo > img {
+  height: 5rem;
+}
+
+/* NAVIGATION MENU */
+
+.nav-lists {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list:not(last-child) {
+  padding: 0.5rem 1rem;
+}
+
+.nav-list:last-child {
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--black);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/*  */
+/* HERO */
+/*  */
+
+.hero-container {
+  background-image: url(../src/assets/pattern-randomized.svg);
+  height: 75vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-caption,
+.hero-img {
+  width: 48%;
+}
+
+.hero-caption {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: var(--padding-15) 5rem;
+  justify-self: flex-end;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 4rem;
+}
+
+.hero-subtitle {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 600;
+  border-bottom: 0.3rem solid var(--primary-color-dark);
+  margin-top: var(--margin-30);
+}
+
+.hero-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img > img {
+  height: 100%;
+}
