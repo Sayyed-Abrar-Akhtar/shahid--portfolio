@@ -155,8 +155,24 @@ h6 {
   font-size: 4rem;
   margin: 0;
   font-weight: 600;
-  border-bottom: var(--border-bottom);
   margin-top: var(--margin-30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  border-bottom: var(--border-bottom);
+}
+
+.icon {
+  height: 4rem;
+  margin: 1rem;
+}
+
+.icon--earth {
+  border-bottom: none;
+  animation: earthSpin 4s linear 4s infinite;
 }
 
 .hero-img {
@@ -167,6 +183,18 @@ h6 {
 
 .hero-img > img {
   height: 90%;
+}
+
+@keyframes earthSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* headings */
