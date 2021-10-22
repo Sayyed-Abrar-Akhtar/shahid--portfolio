@@ -273,7 +273,7 @@ h6 {
 .card {
   background-color: var(--primary-color-light);
   color: var(--black);
-  width: 27%;
+  width: 30.5%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 9px 18px, rgba(0, 0, 0, 0.22) 0px 7px 6px;
   border-radius: var(--border-radius);
   overflow: hidden;

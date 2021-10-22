@@ -7,7 +7,11 @@ const Footer = () => {
       <p>All rights reserved.</p>
       <p>
         Designed and Developed by{' '}
-        <a href='https://www.sayyedabrarakhtar.com.np' className='designer'>
+        <a
+          href='https://www.sayyedabrarakhtar.com.np'
+          target='_blank'
+          className='designer'
+        >
           Sayyed Abrar Akhtar
         </a>
       </p>
