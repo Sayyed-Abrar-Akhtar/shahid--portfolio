@@ -11,6 +11,7 @@ const Footer = () => {
           href='https://www.sayyedabrarakhtar.com.np'
           target='_blank'
           className='designer'
+          rel='noreferrer'
         >
           Sayyed Abrar Akhtar
         </a>
