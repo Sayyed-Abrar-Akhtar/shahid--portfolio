@@ -5,11 +5,11 @@ import Services from '../components/Services';
 
 const HomeScreen = () => {
   return (
-    <section>
+    <main>
       <Hero />
       <Services />
       <Projects />
-    </section>
+    </main>
   );
 };
 

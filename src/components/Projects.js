@@ -2,6 +2,7 @@ import React from 'react';
 import Project from './Project';
 
 import geodeticmeasurement from '../assets/geodeticmeasurement.jpg';
+import Button from './Button';
 
 const Projects = () => {
   return (
@@ -10,6 +11,7 @@ const Projects = () => {
       <Project image={geodeticmeasurement} />
       <Project />
       <Project />
+      <Button link='/projects' text='View all projects' />
     </section>
   );
 };

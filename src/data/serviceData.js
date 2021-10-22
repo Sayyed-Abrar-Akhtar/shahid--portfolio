@@ -15,6 +15,13 @@ export const services = [
       'Geology outdoor composition with flat wild landscape group geologists during examination procedures with equipment.',
     image: examinationprocedures,
   },
+
+  {
+    service_title: 'Geodetic Measurement 2',
+    service_description:
+      'Geologist field work isometric composition with men taking geodetic measurements earth surface vector. Geologist field work isometric composition with men taking geodetic measurements earth surface vector.Geologist field work isometric composition with men taking geodetic measurements earth surface vector. Geologist field work isometric composition with men taking geodetic measurements earth surface vector. ',
+    image: geodeticmeasurement,
+  },
   {
     service_title: 'Geodetic Measurement',
     service_description:

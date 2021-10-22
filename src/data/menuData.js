@@ -7,7 +7,7 @@ export const menus = [
   {
     id: 'projects',
     name: 'Projects',
-    link: '/project',
+    link: '/projects',
   },
   {
     id: 'services',
