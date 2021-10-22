@@ -25,6 +25,7 @@
   --padding-25: 2.5rem;
   --padding-30: 3rem;
   --container-width: 86%;
+  --container-width-sm: 94%;
 }
 
 html {
@@ -37,6 +38,12 @@ html {
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    margin: 2rem;
+  }
 }
 
 body {
@@ -451,4 +458,142 @@ h6 {
 .service-description {
   text-align: justify;
   line-height: 2rem;
+}
+
+/*  */
+/* CONTACT SCREEN */
+/*  */
+
+.contact-container {
+  display: flex;
+  width: var(--container-width);
+  margin: 0 auto;
+  padding: 5rem 0;
+
+  background-image: url(../src/assets/pattern-randomized.svg);
+}
+
+.contact-detail-holder {
+  width: 65%;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+}
+
+.contact-detail-holder > p {
+  display: flex;
+  align-items: center;
+}
+
+.contact-detail-holder > p > strong {
+  display: flex;
+  align-items: center;
+  min-width: 15rem;
+}
+
+.contact-detail-holder > p > a {
+  color: var(--black);
+  text-decoration: none;
+  transition: all 0.2s linear;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.contact-detail-holder > p > a:hover {
+  transform: scale(1.08) rotateX(5deg);
+  font-weight: 600;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+.icon--mail {
+  color: #bb001b;
+}
+
+.icon--phone {
+  color: #333;
+}
+
+.icon--whatsapp {
+  color: #075e54;
+}
+
+.icon--viber {
+  color: #59267c;
+}
+
+.image-holder {
+  width: 35%;
+  min-height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-background {
+  width: 28rem;
+  height: 28rem;
+  position: absolute;
+
+  background-image: url(../src/assets/earth.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  animation: earthSpin 4s linear 4s infinite;
+  z-index: 1;
+}
+
+.image {
+  width: 25rem;
+  height: 25rem;
+
+  z-index: 2;
+}
+
+.contact-image {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-container {
+    flex-direction: column-reverse;
+    width: var(--container-width-sm);
+  }
+
+  .image-holder {
+    margin: 0 auto;
+  }
+
+  .contact-image {
+    height: 100%;
+    width: auto;
+  }
+
+  .contact-detail-holder {
+    padding: 0 3rem;
+  }
+
+  .contact-detail-holder > h2 {
+    font-size: 1.7rem;
+  }
+
+  .contact-detail-holder > p {
+    font-size: 1.3rem;
+  }
+
+  .contact-detail-holder > p > strong {
+    min-width: 12rem;
+  }
+
+  .contact-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
 }
