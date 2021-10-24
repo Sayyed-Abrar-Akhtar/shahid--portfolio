@@ -673,6 +673,11 @@ ul {
   display: inline-block;
 }
 
+.personal-info > a {
+  text-decoration: none;
+  color: var(--black);
+}
+
 .education-container,
 .computer-container {
   padding-bottom: 1rem;

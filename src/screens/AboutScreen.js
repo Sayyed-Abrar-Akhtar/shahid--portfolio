@@ -20,20 +20,13 @@ const AboutScreen = () => {
             <strong>&nbsp;Address:&nbsp;</strong>
             Yapikhya Marg-54, Dhobichaur, Chhetrapati, Kathmandu-17, Nepal
           </p>
-          <p className='personal-info citizenship-id'>
-            <strong>&nbsp;Citizenship ID:&nbsp;</strong>45670 (Nepali)
-          </p>
-          <p className='personal-info passport-id'>
-            <strong>&nbsp;Passport ID:&nbsp;</strong>06748101
-          </p>
-          <p className='personal-info license-id'>
-            <strong>&nbsp;Driving L.N:&nbsp;</strong>010600125560 (A)
-          </p>
-          <p className='personal-info pan'>
-            <strong>&nbsp;PAN:&nbsp;</strong>111820186
-          </p>
+
           <p className='personal-info mobile'>
             <strong>&nbsp;Mobile:&nbsp;</strong>+977-9841756550
+          </p>
+          <p className='personal-info email'>
+            <strong>&nbsp;Gmail:&nbsp;</strong>
+            <a href='mailto:shd.m20@gmail.com'>shd.m20@gmail.com</a>
           </p>
         </section>
         <section className='education-info-container'>
