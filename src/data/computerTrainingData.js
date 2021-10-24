@@ -22,7 +22,6 @@ export const trainings = [
     date: 'Two semester, 2013',
     center: 'Central Department of Geology, Tribhuvan University, Kirtipur',
     skills: ['Basic English language'],
-    score: '83%, First Division',
   },
   {
     title: 'Training on ARCGIS',
