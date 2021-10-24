@@ -67,7 +67,8 @@ h3 {
 }
 
 h4,
-p {
+p,
+li {
   font-size: 1.6rem;
 }
 
@@ -77,6 +78,17 @@ h5 {
 
 h6 {
   font-size: 1.072rem;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 6px;
+  }
 }
 
 /*  */
@@ -235,6 +247,26 @@ h6 {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    padding: 0 5rem;
+    height: auto;
+  }
+
+  .hero-img {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+  }
+
+  .hero-img > img {
+    width: 80%;
+    height: auto;
+  }
+}
+
 /* headings */
 .section-heading {
   text-transform: uppercase;
@@ -305,6 +337,17 @@ h6 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 700px) {
+  .card-holder {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 85%;
+    margin: 3rem auto;
+  }
+}
+
 /*  */
 /* PROJECTS */
 /*  */
@@ -355,6 +398,17 @@ h6 {
   background-size: cover;
   width: 100%;
   height: 45rem;
+}
+
+@media screen and (max-width: 700px) {
+  .project {
+    flex-direction: column-reverse;
+  }
+
+  .project-image,
+  .project-details--width {
+    width: 100%;
+  }
 }
 
 /*  */
@@ -571,6 +625,10 @@ h6 {
     margin: 0 auto;
   }
 
+  .image-background {
+    background-image: url(../src/assets/earthsm.png);
+  }
+
   .contact-image {
     height: 100%;
     width: auto;
@@ -580,20 +638,94 @@ h6 {
     padding: 0 3rem;
   }
 
-  .contact-detail-holder > h2 {
-    font-size: 1.7rem;
-  }
-
-  .contact-detail-holder > p {
-    font-size: 1.3rem;
-  }
-
   .contact-detail-holder > p > strong {
     min-width: 12rem;
   }
+}
 
-  .contact-icon {
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
+/*  */
+/* ABOUT */
+/*  */
+.about-container {
+  width: var(--container-width);
+  margin: 5rem auto 8rem auto;
+}
+
+.heading--bg {
+  background-color: var(--primary-color-dark);
+  padding: 1rem;
+}
+
+.personal-info-container,
+.education-info-container,
+.training-skills-container,
+.professional-social-activities-container {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--primary-color-dark);
+}
+
+.personal-info {
+  display: flex;
+}
+
+.personal-info > strong {
+  min-width: 15rem;
+  display: inline-block;
+}
+
+.education-container,
+.computer-container {
+  padding-bottom: 1rem;
+}
+
+.education-container > h3,
+.computer-container > h3 {
+  color: var(--primary-color-dark);
+  text-transform: uppercase;
+}
+
+.education-container:not(:last-child),
+.computer-container:not(:last-child) {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.116);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.skill {
+  background-color: var(--primary-color-dark);
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  width: max-content;
+}
+
+.skill:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.other-activities-list {
+  margin: 1.5rem 0;
+  padding: 0;
+  line-height: 2.5rem;
+  text-align: justify;
+  letter-spacing: 1px;
+  display: flex;
+}
+
+.other-activities {
+  margin: 0 1rem;
+}
+
+.other-activities-list > span {
+  margin-right: 1rem;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 700px) {
+  .about-container {
+    margin-top: -5rem;
   }
 }
