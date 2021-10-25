@@ -1,31 +1,31 @@
-import earthexploration from '../assets/earthexploration.jpg';
-import examinationprocedures from '../assets/examinationprocedures.jpg';
-import geodeticmeasurement from '../assets/geodeticmeasurement.jpg';
+import gpi from '../assets/gpi.jpg';
+import gti from '../assets/gti.jpg';
+import hgi from '../assets/hgi.jpg';
 
 export const services = [
   {
-    service_title: 'Earth Exploration',
-    service_description:
-      'Earth exploration isometric flowchart blue deep drilling soil layers prospecting work scientific research.',
-    image: earthexploration,
+    service_title: 'Hydrogeological Investigation',
+    service_description: [
+      'Groundwater Resources investigation, delineation of Recharge zone for Irrigation, Drinking water and Industrial Purpose.',
+      'Supervision of Deep tube well construction and development of the well.',
+      'Conduction of Electrical Logging, well design and Pumping test of a tube well.',
+    ],
+    image: hgi,
   },
   {
-    service_title: 'Examination Procedures',
-    service_description:
-      'Geology outdoor composition with flat wild landscape group geologists during examination procedures with equipment.',
-    image: examinationprocedures,
+    service_title: 'Geological / Geotechnical Investigation',
+    service_description: [
+      'Preparation of Geological and Engineering geological map for different construction of engineering projects and geo hazard projects.',
+    ],
+    image: gti,
   },
 
   {
-    service_title: 'Geodetic Measurement 2',
-    service_description:
-      'Geologist field work isometric composition with men taking geodetic measurements earth surface vector. Geologist field work isometric composition with men taking geodetic measurements earth surface vector.Geologist field work isometric composition with men taking geodetic measurements earth surface vector. Geologist field work isometric composition with men taking geodetic measurements earth surface vector. ',
-    image: geodeticmeasurement,
-  },
-  {
-    service_title: 'Geodetic Measurement',
-    service_description:
-      'Geologist field work isometric composition with men taking geodetic measurements earth surface vector.',
-    image: geodeticmeasurement,
+    service_title: 'Geophysical Investigation',
+    service_description: [
+      'Electrical Resistivity Survey for the delineation of groundwater exploration, sub surface geology, mineral exploration, and construction engineering projects (i.e., roads, hydropower, tunnels etc)',
+      'Conduction of Electrical well Logging and design of the deep tube well.',
+    ],
+    image: gpi,
   },
 ];

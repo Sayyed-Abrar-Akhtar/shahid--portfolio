@@ -8,7 +8,14 @@ const ServiceDetails = ({ image, title, description }) => {
       </section>
       <section className='service-details'>
         <h3 className='service-title'>{title}</h3>
-        <p className='service-description'>{description}</p>
+        <ul className='card-lists'>
+          {description.map((item, index) => (
+            <li className='card-list' key={index}>
+              <span>&#9656;</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
       </section>
     </section>
   );

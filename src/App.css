@@ -302,6 +302,11 @@ ul {
   align-items: stretch;
 }
 
+.service-title {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .card {
   background-color: var(--primary-color-light);
   color: var(--black);
@@ -323,11 +328,24 @@ ul {
   text-align: center;
 }
 
-.card-description {
+.card-lists {
   text-align: justify;
-  padding: 2rem 1.5rem;
+  padding: 1rem 2rem 1rem 1rem;
   letter-spacing: 1px;
   word-spacing: 3px;
+  line-height: 2rem;
+}
+
+.card-list {
+  display: flex;
+}
+
+.card-list:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.card-list > span:first-child {
+  padding-right: 0.5rem;
 }
 
 .card:hover {

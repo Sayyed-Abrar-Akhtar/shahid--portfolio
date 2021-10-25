@@ -1,6 +1,6 @@
 import React from 'react';
 
-import geodeticmeasurement from '../assets/geodeticmeasurement.jpg';
+import gpi from '../assets/gpi.jpg';
 import Project from '../components/Project';
 
 const ProjectsScreen = () => {
@@ -8,7 +8,7 @@ const ProjectsScreen = () => {
     <main>
       <h1 className='section-heading'>My Projects</h1>
       <section className='projects-container'>
-        <Project image={geodeticmeasurement} />
+        <Project image={gpi} />
         <Project />
         <Project />
         <Project />
