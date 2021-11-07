@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaViber, FaWhatsapp, FaMobileAlt } from 'react-icons/fa';
+import { FaViber, FaWhatsapp, FaMobileAlt, FaLinkedin } from 'react-icons/fa';
 import { GoMail } from 'react-icons/go';
 
 import user from '../assets/user.png';
@@ -38,6 +38,15 @@ const ContactScreen = () => {
               &nbsp;Gmail :&nbsp;
             </strong>
             <a href='mailto:shd.m20@gmail.com'>shd.m20@gmail.com</a>
+          </p>
+          <p>
+            <strong>
+              <FaLinkedin className='contact-icon icon--linkedin' />
+              &nbsp;Linkedin:&nbsp;
+            </strong>
+            <a href='https://np.linkedin.com/in/shahid-muslim-b18a4044'>
+              shahid-muslim-b18a4044
+            </a>
           </p>
         </section>
         <section className='image-holder'>

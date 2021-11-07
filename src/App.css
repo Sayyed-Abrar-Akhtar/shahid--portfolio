@@ -171,6 +171,154 @@ ul {
   font-weight: 500;
 }
 
+.nav__holder {
+  display: none;
+}
+
+.nav--mob__input {
+  display: none;
+}
+
+.nav--mob {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    min-height: 10rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav--mob {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  .nav--mob__label {
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    z-index: 19999;
+    position: absolute;
+    top: 3.5rem;
+    right: 6rem;
+  }
+
+  .hamburger-bar {
+    width: 3rem;
+    height: 0.4rem;
+    display: inline-block;
+    background-color: #000;
+    position: relative;
+    border-radius: var(--border-radius);
+  }
+
+  .hamburger-bar::after,
+  .hamburger-bar::before {
+    content: '';
+    display: inline-block;
+    background-color: #000;
+    width: 3rem;
+    height: 0.4rem;
+    position: absolute;
+    border-radius: var(--border-radius);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .hamburger-bar::after {
+    bottom: 5px;
+  }
+
+  .hamburger-bar::before {
+    top: 5px;
+  }
+
+  .nav--mob__input:checked + .nav--mob__label > .hamburger-bar {
+    background-color: white;
+  }
+
+  .nav--mob__input:checked + .nav--mob__label > .hamburger-bar::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .nav--mob__input:checked + .nav--mob__label > .hamburger-bar::after {
+    transform: rotate(-135deg);
+    bottom: 0;
+  }
+
+  .nav__holder {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+
+  .nav__background {
+    position: absolute;
+    top: 3.5rem;
+    right: 6rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background: radial-gradient(
+      var(--primary-color-light),
+      var(--primary-color-dark)
+    );
+    z-index: 999;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .nav--mob__lists {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -99;
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .nav--mob__input:checked ~ .nav__holder > .nav__background {
+    transform: scale(50);
+  }
+
+  .nav--mob__input:checked ~ .nav__holder > .nav--mob__lists {
+    z-index: 9991;
+    opacity: 1;
+  }
+
+  .nav--mob__input:checked ~ .nav__holder > .nav--mob__lists > .nav--mob__list {
+    transform: translateX(0);
+  }
+
+  .nav--mob__list {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 5rem;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .nav--mob__list:nth-child(2n) {
+    transform: translateX(25vw);
+  }
+
+  .nav--mob__list:nth-child(2n + 1) {
+    transform: translateX(-25vw);
+  }
+}
+
 /*  */
 /* HERO */
 /*  */
@@ -598,6 +746,10 @@ ul {
 
 .icon--viber {
   color: #59267c;
+}
+
+.icon--linkedin {
+  color: #0077b5;
 }
 
 .image-holder {

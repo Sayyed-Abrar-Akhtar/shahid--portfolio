@@ -28,6 +28,12 @@ const AboutScreen = () => {
             <strong>&nbsp;Gmail:&nbsp;</strong>
             <a href='mailto:shd.m20@gmail.com'>shd.m20@gmail.com</a>
           </p>
+          <p className='personal-info linkedIn'>
+            <strong>&nbsp;linkedIn:&nbsp;</strong>
+            <a href='https://np.linkedin.com/in/shahid-muslim-b18a4044'>
+              https://np.linkedin.com/in/shahid-muslim-b18a4044
+            </a>
+          </p>
         </section>
         <section className='education-info-container'>
           <h2 className='name heading--bg'>Education</h2>
