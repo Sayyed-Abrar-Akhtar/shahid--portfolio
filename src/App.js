@@ -14,7 +14,7 @@ function App() {
     <Router>
       <section className='wrapper'>
         <Header />
-        <Route path='/projects' component={ProjectsScreen} exact />
+        <Route path='/experiences' component={ProjectsScreen} exact />
         <Route path='/services' component={ServicesScreen} exact />
         <Route path='/about-me' component={AboutScreen} exact />
         <Route path='/contact-me' component={ContactScreen} exact />

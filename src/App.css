@@ -680,6 +680,24 @@ ul {
   line-height: 2rem;
 }
 
+@media screen and (max-width: 700px) {
+  .service-details-container {
+    margin-bottom: -15rem;
+  }
+
+  .service-details {
+    position: static;
+    margin-top: 5rem;
+  }
+
+  .service-image-container,
+  .service-details {
+    width: 100%;
+    border-radius: var(--border-radius);
+    height: 30rem;
+  }
+}
+
 /*  */
 /* CONTACT SCREEN */
 /*  */

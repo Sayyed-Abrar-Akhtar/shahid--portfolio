@@ -1,20 +1,24 @@
 import React from 'react';
 
-import gpi from '../assets/gpi.jpg';
 import Project from '../components/Project';
+import { projects } from '../data/projectData';
 
 const ProjectsScreen = () => {
   return (
     <main>
-      <h1 className='section-heading'>My Projects</h1>
+      <h1 className='section-heading'>Experiences</h1>
       <section className='projects-container'>
-        <Project image={gpi} />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {projects.map((i, idx) => (
+          <Project
+            key={idx}
+            consultant={i.consultant}
+            position={i.position}
+            from={i.from}
+            to={i.to}
+            projects={i.projects}
+            responsibilities={i.responsibilities}
+          />
+        ))}
       </section>
     </main>
   );

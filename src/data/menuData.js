@@ -5,9 +5,9 @@ export const menus = [
     link: '/',
   },
   {
-    id: 'projects',
-    name: 'Projects',
-    link: '/projects',
+    id: 'experiences',
+    name: 'Experiences',
+    link: '/experiences',
   },
   {
     id: 'services',

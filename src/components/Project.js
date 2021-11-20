@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Project = ({
-  title = 'Project Title',
+  consultant = 'Project Title',
+  position = 'Position',
   from = '2019',
   to = '2021',
-  description = 'Project Description:',
+  projects = 'projects',
+  responsibilities = 'Project Description:',
   image,
 }) => {
   return (
@@ -14,27 +16,25 @@ const Project = ({
           image ? 'project-details project-details--width' : 'project-details'
         }
       >
-        <h3 className='project-title'>{title}</h3>
+        <h3 className='project-title'>{consultant}</h3>
+        <h3 className='project-title'>{position}</h3>
         <p className='project-duration'>
           {from} - {to}
         </p>
         <p className='project-description'>
-          {description} Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          At voluptatibus, totam, nam fugit beatae nostrum amet voluptates
-          itaque nobis enim optio quo ducimus? Provident optio sapiente
-          quibusdam animi ullam odio. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Debitis quam doloribus fuga harum eaque explicabo
-          consequatur temporibus. Nostrum beatae asperiores, repellat eaque
-          libero illo explicabo error ab voluptatum esse vel. Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Sapiente commodi tempore omnis
-          incidunt recusandae! Cum commodi repudiandae architecto similique, aut
-          consequuntur consectetur modi quos officia sequi, nostrum vitae
-          nesciunt harum! lorem ipsum dolor
+          <b>Projects: </b>
+          <br />
+          {projects}
+        </p>
+        <p className='project-description'>
+          <b>Responsibilities: </b>
+          <br />
+          {responsibilities}
         </p>
       </section>
       {image && (
         <section className='project-image'>
-          <img src={image} alt={title} />
+          <img src={image} alt={consultant} />
         </section>
       )}
     </article>
