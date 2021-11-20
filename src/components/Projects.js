@@ -7,7 +7,7 @@ import { projects } from '../data/projectData';
 const Projects = () => {
   return (
     <section className='projects-container'>
-      <h1 className='section-heading'>Projects</h1>
+      <h1 className='section-heading'>Experiences</h1>
       {projects.map(
         (i, idx) =>
           idx <= 2 && (
